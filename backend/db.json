@@ -35,16 +35,6 @@
   ],
   "fazendas": [
     {
-      "name": "Fazenda Feliz Sempre",
-      "grao": "Soja",
-      "ultimaColheita": "01/01/1000",
-      "previsaoColheita": "01/01/2002",
-      "endereco": "Rua Do Jabuti, 69",
-      "id": 4,
-      "estoque": 30,
-      "cidade": "Mossoró"
-    },
-    {
       "name": "Fazenda Santa Helena",
       "endereco": "Rua Brasil",
       "grao": "Soja",
@@ -81,6 +71,15 @@
       "cidade": "Campos Novos",
       "estoque": "60",
       "id": 10
+    },
+    {
+      "name": "Fazenda Teste",
+      "endereco": "Rua Legal",
+      "grao": "Café",
+      "ultimaColheita": "12/12/2021",
+      "cidade": "Blumenau",
+      "estoque": "50",
+      "id": 11
     }
   ],
   "funcionarios": [
@@ -193,6 +192,22 @@
       "endereco": "Rua Das Canoas",
       "senha": "123456",
       "id": 8
+    },
+    {
+      "nome": "Agrodev Adm de Fazendas",
+      "email": "agrodev@agrodev.com.br",
+      "cnpj": "23222333444455",
+      "endereco": "Rua Uruguai",
+      "senha": "123456",
+      "id": 9
+    },
+    {
+      "nome": "Oliveira Administração Fazendária Ltda",
+      "email": "oliveira@oliveira.com.br",
+      "cnpj": "56874164000100",
+      "endereco": "Rua Brasil, 22",
+      "senha": "123456",
+      "id": 10
     }
   ]
 }
