@@ -17,14 +17,6 @@
       "id": 7
     },
     {
-      "nome": "Café",
-      "previsao_colheita": "02/09/2022",
-      "informacoes": "Safra",
-      "fazenda": "Fazenda Almeida",
-      "ativo": true,
-      "id": 8
-    },
-    {
       "nome": "Soja",
       "previsao_colheita": "21/07/2022",
       "informacoes": "Próxima Colheita",
@@ -53,15 +45,6 @@
       "id": 6,
       "estoque": 10,
       "cidade": "Chapecó"
-    },
-    {
-      "name": "Fazenda Almeida Café",
-      "endereco": "Rua da Cachoeira",
-      "grao": "Café",
-      "ultimaColheita": "01032022",
-      "cidade": "Londrina",
-      "estoque": "20",
-      "id": 9
     },
     {
       "name": "Fazenda Do Arroizal",
@@ -101,20 +84,9 @@
       "update": "14/06/2022",
       "cpf": "12345622222",
       "telefone": "48987661223",
-      "cargo": "Encarregado",
+      "cargo": "Gerente",
       "ativo": true,
       "id": 3
-    },
-    {
-      "nome": "Rafael Souza",
-      "fazenda": "Fazenda Quinta da Boa Vista",
-      "data": "18/06/2022",
-      "update": "18/06/2022",
-      "cpf": "34554311199",
-      "telefone": "21976453322",
-      "cargo": "Caseiro",
-      "ativo": true,
-      "id": 5
     },
     {
       "nome": "Maria Rita Almeida Dos Santos",
@@ -208,6 +180,22 @@
       "endereco": "Rua Brasil, 22",
       "senha": "123456",
       "id": 10
+    },
+    {
+      "nome": "Teste",
+      "email": "blablablabla@email.com",
+      "cnpj": "13502941000175",
+      "endereco": "Rua Da Chuva",
+      "senha": "123456",
+      "id": 11
+    },
+    {
+      "nome": "Teste adm",
+      "email": "teste@teste.com",
+      "cnpj": "95149160000103",
+      "endereco": "Rua Da Chuva",
+      "senha": "123456",
+      "id": 12
     }
   ]
 }

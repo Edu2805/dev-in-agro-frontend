@@ -24,7 +24,7 @@
       <label class="label">SENHA</label>
       <a href="#" class="forget-password">Esqueceu a senha?</a>
       <input [type]="passwordType" id="senha" placeholder="Senha" required />
-      <button class="btn-login" (click)="login()">Log in</button>
+      <button pButton type="button" label="Log in" class="btn-login" (click)="login()"></button>
       <div class="icone" (click)="togglePassword()">
         <i
           class="fa fa-eye"

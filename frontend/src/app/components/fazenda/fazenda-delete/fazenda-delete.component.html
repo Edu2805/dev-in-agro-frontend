@@ -65,6 +65,6 @@
   </form>
 </mat-card>
 <mat-card class="button-position">
-  <button (click)="deleteFazenda()">DELETAR</button>
-  <button id="cancel" (click)="cancel()">CANCELAR</button>
+  <button pButton type="submit" label="DELETAR" class="button-add" (click)="deleteFazenda()"></button>
+  <button id="cancel" pButton type="reset" label="CANCELAR" class="button-add" (click)="cancel()"></button>
 </mat-card>

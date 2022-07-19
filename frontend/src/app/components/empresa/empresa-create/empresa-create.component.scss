@@ -95,7 +95,20 @@ input {
     border-radius: 8px;
 }
 
-input[type=submit] {
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #FCFDFE;
+    border: 1px solid #375F24;
+    border-radius: 8px;
+}
+
+button[type=submit] {
     cursor: pointer;
     background-color: #375F24;
     font-weight: 600;
@@ -103,7 +116,7 @@ input[type=submit] {
     box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #FFFFFF;
     font-weight: 600;
     color: #375F24;
