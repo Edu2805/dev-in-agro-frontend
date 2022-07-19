@@ -1,19 +1,19 @@
 <header>
-  <mat-card class="card1">
+  <p-card class="card1">
     <div class="card-content">
       <span class="farm-title">Total de propriedades</span>
       <span class="numbers">{{ fazendas.length }}</span>
     </div>
-  </mat-card>
-  <mat-card class="card2">
+  </p-card>
+  <p-card class="card2">
     <div class="card-content">
       <span class="farm-title">Total de Funcionários</span>
       <span class="numbers paint">{{ funcionarios.length }}</span>
     </div>
-  </mat-card>
+  </p-card>
 </header>
 <main class="principal-main">
-  <mat-card class="read">
+  <p-card class="read">
     <header class="header-table">
       <section class="title">
         <h3>Propriedades cadastradas</h3>
@@ -21,15 +21,15 @@
     </header>
     <main class="main-table">
       <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th class="farm-title-table" scope="col">Nome da Propriedade</th>
-              <th class="harvest-title" scope="col">Previsão de colheita</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- detalhes -->
+        <p-table class="table table-hover" [value]="fazendas" responsiveLayout="scroll">
+          <ng-template pTemplate="header">
+              <tr>
+                <th class="farm-title-table" scope="col">Nome da Propriedade</th>
+                <th class="harvest-title" scope="col">Previsão de colheita</th>
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+              <!-- detalhes -->
             <tr *ngFor="let fazenda of fazendas">
               <td>
                 <div class="detalhes-linha">
@@ -49,11 +49,11 @@
                 </div>
               </td>
             </tr>
-          </tbody>
-        </table>
+          </ng-template>
+      </p-table>
       </div>
     </main>
-  </mat-card>
+  </p-card>
 </main>
 <footer>
   <mat-card class="card3" *ngIf="weatherData">
