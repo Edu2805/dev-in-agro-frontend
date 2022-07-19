@@ -56,6 +56,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomeViewComponent } from './views/home-view/home-view.component';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -107,6 +108,7 @@ import { HomeViewComponent } from './views/home-view/home-view.component';
     MatGridListModule,
     MatMenuModule,
     LayoutModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
