@@ -57,6 +57,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomeViewComponent } from './views/home-view/home-view.component';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -108,7 +110,9 @@ import { ButtonModule } from 'primeng/button';
     MatGridListModule,
     MatMenuModule,
     LayoutModule,
-    ButtonModule
+    ButtonModule,
+    CardModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
