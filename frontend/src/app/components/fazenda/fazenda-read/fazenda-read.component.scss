@@ -7,23 +7,24 @@
   position: relative;
 }
 
-.read header {
+.read p-header {
   line-height: 24px;
   margin: 32px;
   display: flex;
   justify-content: space-between;
 }
 
-.read header .title h3 {
+.read p-header .title h3 {
   width: 400px;
   line-height: 24px;
   font-weight: 700;
   font-size: 19px;
   letter-spacing: 0.4px;
   color: #252733;
+  margin-top: 50px;
 }
 
-.read header .filters {
+.read p-header .filters {
   display: flex;
   justify-content: space-between;
   gap: 7px;
@@ -34,14 +35,14 @@
   color: #4B506D;
 }
 
-.read header .filters .filter, .read header .filters .order {
+.read p-header .filters .filter, .read p-header .filters .order {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.read header .filters .filter:hover, .read header .filters .order:hover {
+.read p-header .filters .filter:hover, .read p-header .filters .order:hover {
   transform: scale(1.1);
 }
 
@@ -54,6 +55,7 @@ mat-icon {
   height: 510px;
   overflow: hidden;
   overflow-y: scroll;
+  margin-top: -30px;
 }
 
 table th {
@@ -217,22 +219,22 @@ footer {
     height: 70vh;
   }
 
-  .read header {
+  .read p-header {
     line-height: 24px;
     margin: 15px;
     display: inline;
   }
 
-  .read header .title h3 {
+  .read p-header .title h3 {
     width: 100%; 
   }
 
-  .read header .filters {
+  .read p-header .filters {
     display: flex;
     justify-content: flex-start;
   }
 
-  .read header .filters .filter {
+  .read p-header .filters .filter {
     margin-left: 15px;
   }
 
