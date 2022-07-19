@@ -80,12 +80,13 @@
           [ngStyle]="{ color: '#9FA2B4' }"
         ></i>
       </div>
-      <input
+      <!-- <input
         type="submit"
         value="Log In"
         (click)="createEmpresa()"
         class="login-button"
-      />
+      /> -->
+      <button pButton type="submit" label="Log in" class="login-button" (click)="createEmpresa()"></button>
     </form>
   </mat-card>
 </mat-card>

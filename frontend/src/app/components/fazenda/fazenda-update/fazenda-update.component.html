@@ -63,6 +63,6 @@
   </form>
 </mat-card>
 <mat-card class="button-position">
-  <button (click)="updateFazenda()">ALTERAR</button>
-  <button id="cancel" (click)="cancel()">CANCELAR</button>
+  <button pButton type="submit" label="ALTERAR" class="button-add" (click)="updateFazenda()"></button>
+  <button id="cancel" pButton type="reset" label="CANCELAR" class="button-add" (click)="cancel()"></button>
 </mat-card>

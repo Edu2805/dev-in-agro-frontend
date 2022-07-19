@@ -75,6 +75,6 @@
   </form>
 </mat-card>
 <mat-card class="button-position">
-  <button (click)="createFazenda()">CADASTRAR</button>
-  <button id="cancel" (click)="cancel()">CANCELAR</button>
+  <button pButton type="submit" label="CADASTRAR" class="button-add" (click)="createFazenda()"></button>
+  <button id="cancel" pButton type="reset" label="CANCELAR" class="button-add" (click)="cancel()"></button>
 </mat-card>
