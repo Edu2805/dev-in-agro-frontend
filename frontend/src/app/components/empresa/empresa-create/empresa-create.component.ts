@@ -94,7 +94,7 @@ export class EmpresaCreateComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  private inputValidator(): boolean {
+  public inputValidator(): boolean {
     let senha2 = document.getElementById('senha2') as HTMLInputElement;
     if (
       this.empresa.nome.trim() === '' ||
@@ -144,7 +144,7 @@ export class EmpresaCreateComponent implements OnInit {
     }
   }
 
-  private validatePassword(senha: string, senha2: string) {
+  public validatePassword(senha: string, senha2: string) {
     if (senha !== senha2) {
       document.getElementById('senha2').classList.add('obrigatory');
       return false;
@@ -154,7 +154,7 @@ export class EmpresaCreateComponent implements OnInit {
     }
   }
 
-  private validateCnpj(cnpj: string): boolean {
+  public validateCnpj(cnpj: string): boolean {
     var cnpjRegex = /^\d{14}$/;
     if (!cnpjRegex.test(cnpj)) {
       return false;
@@ -162,7 +162,7 @@ export class EmpresaCreateComponent implements OnInit {
     return true;
   }
 
-  private validateEmail(email: string): boolean {
+  public validateEmail(email: string): boolean {
     if (!this.validateEmailFormat(email)) {
       document.getElementById('email').classList.add('obrigatory');
       return false;
@@ -172,7 +172,7 @@ export class EmpresaCreateComponent implements OnInit {
     return true;
   }
 
-  private validateEmailFormat(email: string): boolean {
+  public validateEmailFormat(email: string): boolean {
     var emailRegex =
     /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
     if (!emailRegex.test(email)) {
