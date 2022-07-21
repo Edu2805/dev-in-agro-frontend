@@ -25,10 +25,10 @@ export class FuncionarioCreateComponent implements OnInit {
   fazendas: Fazenda[];
 
   constructor(
-    private funcionarioService: FuncionarioService,
-    private fazendaService: FazendaService,
-    private router: Router,
-    private route: ActivatedRoute
+    public funcionarioService: FuncionarioService,
+    public fazendaService: FazendaService,
+    public router: Router,
+    public route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -122,7 +122,7 @@ export class FuncionarioCreateComponent implements OnInit {
     this.router.navigate(['/funcionario']);
   }
 
-  private validateCpf(cpf: string): boolean {
+  public validateCpf(cpf: string): boolean {
     var cpfRegex = /^\d{11}$/;
     if (!cpfRegex.test(cpf)) {
       return false;

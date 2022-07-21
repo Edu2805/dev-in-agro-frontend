@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EmpresaUpdateComponent } from './empresa-update.component';
 
 describe('EmpresaUpdateComponent', () => {
@@ -22,4 +21,5 @@ describe('EmpresaUpdateComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
