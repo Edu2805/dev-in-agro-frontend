@@ -1,4 +1,3 @@
-import { Fazenda } from './../../fazenda/fazenda.model';
 import { GraoService } from './../grao.service';
 import { Grao } from './../grao.model';
 import { Component, OnInit } from '@angular/core';

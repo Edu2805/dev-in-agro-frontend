@@ -9,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grao-delete.component.scss'],
 })
 export class GraoDeleteComponent implements OnInit {
-  grao: Grao;
+  grao: Grao = {
+    nome: '',
+    previsao_colheita: '',
+    informacoes: '',
+    ativo: false
+  };
 
   constructor(
     private gService: GraoService,

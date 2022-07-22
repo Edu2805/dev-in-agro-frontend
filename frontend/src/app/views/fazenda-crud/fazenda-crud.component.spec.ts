@@ -1,4 +1,7 @@
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { FazendaCrudComponent } from './fazenda-crud.component';
 
@@ -8,7 +11,9 @@ describe('FazendaCrudComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FazendaCrudComponent ]
+      declarations: [ FazendaCrudComponent ],
+      imports: [ MatSnackBarModule, HttpClientModule, RouterTestingModule ],
+      providers: [ MatSnackBar, HttpClient ]
     })
     .compileComponents();
   });

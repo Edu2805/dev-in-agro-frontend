@@ -14,6 +14,15 @@ export class FazendaReadComponent implements OnInit {
   fazendas: Fazenda[];
   previsao: string[];
 
+  fazenda: Fazenda = {
+    name: '',
+    endereco: '',
+    estoque: 0,
+    ultimaColheita: '',
+    grao: '',
+    cidade: ''
+  };
+
   constructor(
     private fazendaService: FazendaService,
     private graoService: GraoService
