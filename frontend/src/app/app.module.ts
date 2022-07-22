@@ -28,9 +28,9 @@ import { EmpresaDeleteComponent } from './components/empresa/empresa-delete/empr
 
 //ANGULAR IMPORTS
 import { NgModule } from '@angular/core';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -114,7 +114,7 @@ import { TableModule } from 'primeng/table';
     CardModule,
     TableModule
   ],
-  providers: [],
+  providers: [MatSnackBar, HttpClient],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

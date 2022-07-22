@@ -9,7 +9,16 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./funcionario-delete.component.scss'],
 })
 export class FuncionarioDeleteComponent implements OnInit {
-  funcionario: Funcionario;
+  funcionario: Funcionario = {
+    nome: '',
+    fazenda: '',
+    data: '',
+    update: '',
+    cpf: '',
+    telefone: '',
+    cargo: '',
+    ativo: false
+  };
 
   constructor(
     private funcionarioService: FuncionarioService,

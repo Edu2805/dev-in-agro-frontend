@@ -8,6 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { HomeComponent } from './home.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -24,7 +27,11 @@ describe('HomeComponent', () => {
         MatGridListModule,
         MatIconModule,
         MatMenuModule,
-      ]
+        MatSnackBarModule,
+        HttpClientModule,
+        RouterTestingModule
+      ],
+      providers: [ MatSnackBar, HttpClient ]
     }).compileComponents();
   }));
 

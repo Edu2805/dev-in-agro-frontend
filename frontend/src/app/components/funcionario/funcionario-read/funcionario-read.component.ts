@@ -11,6 +11,16 @@ export class FuncionarioReadComponent implements OnInit {
   @Output() headerTitle = 'Funcionario';
 
   funcionarios: Funcionario[];
+  funcionario: Funcionario = {
+    nome: '',
+    fazenda: '',
+    data: '',
+    update: '',
+    cpf: '',
+    telefone: '',
+    cargo: '',
+    ativo: false
+  };
 
   constructor(private funcionarioService: FuncionarioService) {}
 

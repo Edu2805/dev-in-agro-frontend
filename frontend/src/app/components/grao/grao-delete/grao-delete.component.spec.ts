@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GraoDeleteComponent } from './grao-delete.component';
+import { OverlayModule, Overlay } from '@angular/cdk/overlay';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('GraoDeleteComponent', () => {
   let component: GraoDeleteComponent;
@@ -8,7 +11,9 @@ describe('GraoDeleteComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GraoDeleteComponent ]
+      declarations: [ GraoDeleteComponent ],
+      imports: [ MatSnackBarModule, HttpClientModule, RouterTestingModule, OverlayModule ],
+      providers: [ MatSnackBar, HttpClient, Overlay ]
     })
     .compileComponents();
   });

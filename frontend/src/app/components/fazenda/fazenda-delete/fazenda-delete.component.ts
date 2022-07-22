@@ -9,7 +9,14 @@ import { FazendaService } from '../fazenda.service';
   styleUrls: ['./fazenda-delete.component.scss'],
 })
 export class FazendaDeleteComponent implements OnInit {
-  fazenda: Fazenda;
+  fazenda: Fazenda = {
+    name: '',
+    endereco: '',
+    estoque: 0,
+    ultimaColheita: '',
+    grao: '',
+    cidade: ''
+  };
 
   constructor(
     private fazendaService: FazendaService,
