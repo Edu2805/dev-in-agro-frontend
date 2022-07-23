@@ -27,4 +27,9 @@ describe('GraoReadComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`#${GraoReadComponent.prototype.ngOnInit.name} should render grao list title`, () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain('Lista de Graos');
+  });
 });
