@@ -55,6 +55,12 @@ describe('FuncionarioUpdateComponent', () => {
     expect(input.valueOf).toThrowError();
   });
 
+  it(`#${FuncionarioUpdateComponent.prototype.ngOnInit.name} should called ngOnInit`, () => {
+    let spy = spyOn(component, 'ngOnInit');
+    component.ngOnInit();
+    expect(spy).toHaveBeenCalled();
+  });
+
   it(`#${FuncionarioUpdateComponent.prototype.validatorInputs.name} should called validatorInputs`, () => {
     let spy = spyOn(component, 'validatorInputs');
     component.validatorInputs();
