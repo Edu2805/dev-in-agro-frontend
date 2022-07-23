@@ -27,4 +27,22 @@ describe('FazendaUpdateComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`#${FazendaUpdateComponent.prototype.updateFazenda.name} should show an error when user doesn't fill in the fields`, () => {
+    var input = component.validatorInputs();
+    expect(input.valueOf).toThrow();
+    expect(input.valueOf).toThrowError();
+  });
+
+  it(`#${FazendaUpdateComponent.prototype.ngOnInit.name} should called ngOnInit`, () => {
+    let spy = spyOn(component, 'ngOnInit');
+    component.ngOnInit();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it(`#${FazendaUpdateComponent.prototype.validatorInputs.name} should called validatorInputs`, () => {
+    let spy = spyOn(component, 'validatorInputs');
+    component.validatorInputs();
+    expect(spy).toHaveBeenCalled();
+  });
 });
