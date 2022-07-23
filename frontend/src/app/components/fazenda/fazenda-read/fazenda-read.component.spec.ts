@@ -28,4 +28,9 @@ describe('FazendaReadComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`#${FazendaReadComponent.prototype.ngOnInit.name} should render farm list title`, () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3').textContent).toContain('Fazendas da Empresa');
+  });
 });
