@@ -27,4 +27,20 @@ describe('FazendaCreateComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`#${FazendaCreateComponent.prototype.createFazenda.name} should go through create Fazenda`, () => {
+    expect(component.createFazenda).toBeTruthy();
+  });
+
+  it(`#${FazendaCreateComponent.prototype.createFazenda.name} should show an error when user doesn't fill in the fields`, () => {
+    var input = component.validatorInputs();
+    expect(input.valueOf).toThrow();
+    expect(input.valueOf).toThrowError();
+  });
+
+  it(`#${FazendaCreateComponent.prototype.createFazenda.name} should criaGrao is called`, () => {
+    let spy = spyOn(component, 'createFazenda');
+    component.createFazenda();
+    expect(spy).toHaveBeenCalled();
+  });
 });
