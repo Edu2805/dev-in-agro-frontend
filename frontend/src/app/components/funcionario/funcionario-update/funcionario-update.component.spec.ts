@@ -49,7 +49,15 @@ describe('FuncionarioUpdateComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`#${FuncionarioUpdateComponent.prototype.ngOnInit.name} should show a employee for update`, () => {
-    
+  it(`#${FuncionarioUpdateComponent.prototype.updateFuncionario.name} should show an error when user doesn't fill in the fields`, () => {
+    var input = component.validatorInputs();
+    expect(input.valueOf).toThrow();
+    expect(input.valueOf).toThrowError();
+  });
+
+  it(`#${FuncionarioUpdateComponent.prototype.validatorInputs.name} should called validatorInputs`, () => {
+    let spy = spyOn(component, 'validatorInputs');
+    component.validatorInputs();
+    expect(spy).toHaveBeenCalled();
   });
 });
