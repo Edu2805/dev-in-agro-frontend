@@ -196,6 +196,14 @@
       "endereco": "Rua Da Chuva",
       "senha": "123456",
       "id": 12
+    },
+    {
+      "nome": "Empresa teste da Silva",
+      "email": "teste@teste.com.br",
+      "cnpj": "22333444000110",
+      "endereco": "Rua",
+      "senha": "123456",
+      "id": 13
     }
   ]
 }
