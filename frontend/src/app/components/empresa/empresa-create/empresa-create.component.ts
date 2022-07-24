@@ -59,19 +59,16 @@ export class EmpresaCreateComponent implements OnInit {
     if (!this.inputValidator()) {
       this.empresaService.showMessage('Preencha todos os campos!', true);
       throw new Error('Preencha todos os campos!');
-    }
-
-    if (this.inputValidator()) {
+    } else if (this.inputValidator()) {
       if (!this.validateCnpj(cnpj.value.trim())) {
         this.empresaService.showMessage('Formato de CNPJ inválido', true);
         throw new Error('Formato de CNPJ inválido');
-      }
 
-      if (!this.validateEmail(email.value.trim())) {
+      } else if (!this.validateEmail(email.value.trim())) {
         this.empresaService.showMessage('Formato de e-mail inválido.', true);
         throw new Error('Formato de e-mail inválido.');
-      }
-      if (!this.validatePassword(this.empresa.senha, senha.value.trim())) {
+
+      } else if (!this.validatePassword(this.empresa.senha, senha.value.trim())) {
         this.empresaService.showMessage('Senhas não conferem', true);
         throw new Error('Senhas não conferem');
       }
@@ -167,7 +164,6 @@ export class EmpresaCreateComponent implements OnInit {
       document.getElementById('email').classList.add('obrigatory');
       return false;
     }
-
     document.getElementById('email').classList.remove('obrigatory');
     return true;
   }
