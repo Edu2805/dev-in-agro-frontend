@@ -88,7 +88,6 @@ export class FuncionarioUpdateComponent implements OnInit {
       if (this.oldFarm.name != this.funcionario.fazenda) {
         this.funcionario.update = new Date(Date.now()).toLocaleDateString();
       }
-
       this.funcionarioService.update(this.funcionario).subscribe(() => {
         this.funcionarioService.showMessage(
           'Funcionario Alterado com Sucesso!'
