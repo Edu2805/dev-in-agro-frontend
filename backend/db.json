@@ -23,6 +23,14 @@
       "fazenda": "Fazenda Almeida",
       "ativo": false,
       "id": 9
+    },
+    {
+      "nome": "Feijão",
+      "previsao_colheita": "12/12/2022",
+      "informacoes": "Feijoada",
+      "fazenda": "Fazenda Legal Sempre",
+      "ativo": true,
+      "id": 10
     }
   ],
   "fazendas": [
@@ -47,22 +55,13 @@
       "cidade": "Chapecó"
     },
     {
-      "name": "Fazenda Do Arroizal",
-      "endereco": "Rua do Arroz",
-      "grao": "Arroz",
-      "ultimaColheita": "21/02/2022",
-      "cidade": "Campos Novos",
-      "estoque": "60",
-      "id": 10
-    },
-    {
-      "name": "Fazenda Teste",
-      "endereco": "Rua Legal",
-      "grao": "Café",
+      "name": "Fazenda Legal Sempre",
+      "endereco": "Rua Uruguai",
+      "grao": "Feijão",
       "ultimaColheita": "12/12/2021",
-      "cidade": "Blumenau",
-      "estoque": "50",
-      "id": 11
+      "cidade": "Campo Grande",
+      "estoque": "10",
+      "id": 7
     }
   ],
   "funcionarios": [
