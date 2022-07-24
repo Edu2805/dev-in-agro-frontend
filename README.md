@@ -7,7 +7,7 @@
 
 <h3 align="center">***********🔧 Cobertura de testes unitários com Jasmine / Karma 🔧***********</h3>
 
-<p align="center"><img height="80px" src="https://github.com/Edu2805/dev-in-agro-frontend/blob/src/assets/img/coverage.png" width="380px"/></p>
+<p align="center"><img height="80px" src="https://github.com/Edu2805/dev-in-agro-frontend/blob/main/frontend/src/assets/img/coverage.png" width="380px"/></p>
 
 <h3 align="center">***********🔧 INSTRUÇÕES 🔧***********</h3>
 <h4 align="center">Como executar a aplicação</h4>
